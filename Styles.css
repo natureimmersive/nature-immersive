@@ -1,0 +1,231 @@
+/*Overall Body:*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://negativespace.co/wp-content/uploads/2022/03/negative-space-lush-gardens-nyc-park-1536x896.jpg); /* Add your image URL here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+}
+
+/*Navigation bar code:*/
+.topnav a {
+    color: white;
+    padding: 10px 10px;
+	font-weight: 600;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 70px;
+    margin-bottom: 0px;
+    transition: background-color 0.4s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.topnav a:hover {
+    background-color: lightgreen; /* Highlight color */
+    color: black;
+}
+
+.topnav a.active {
+    background-color: lightgreen;
+	color: black;
+}
+
+.topnav li {
+    display: flex;
+    align-items: center;
+}
+
+/* Background for the navigation bar */
+.topnav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 0px;
+    margin: 0px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align children to the right */
+    align-items: center; /* Center children vertically */
+}
+
+/* Navigation bar logo */
+.logo img {
+    height: 90px;
+    width: 170px;
+    margin-top: 0px;
+	margin-right: 450px;
+}
+
+main {
+	border-radius: 0px;
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	background-color: #e5f9db;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	color: #35611F;
+	overflow: hidden; /* Hide overflow content */
+	word-wrap: break-word; /* Break long words */
+}
+
+main img, main video, main iframe {
+	max-width: 100%; /* Ensure media elements do not exceed container width */
+}
+
+/* Home Page */
+
+#h1name {
+	text-align: center;
+	font-size: 45px;
+}
+
+/* About Us Page */
+
+
+/* Virtual Tours Page */
+.bt-wrapper1 {
+  margin: 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.first-column {
+  background-color: white;
+  height: 100%;
+}
+
+.second-column {
+  background-color: white;
+  height: 100%;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+    height: 100%;
+  }
+  .first-column {
+    height: 100%;
+  }
+}
+
+/* Second Set */
+
+.bt-wrapper2 {
+  margin: 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.third-column {
+  background-color: white;
+  height: 100%;
+}
+
+.fourth-column {
+  background-color: white;
+  height: 100%;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+    height: 100%;
+  }
+  .third-column {
+    height: 100%;
+  }
+}
+
+
+/* Contacts Page */
+.CON {
+	text-align: center;
+}
+
+/* styles.css */
+
+/* General styles for the form */
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Styles for form labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* General styles for all input boxes */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Styling the submit button */
+form input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1px; 
+    background-color: black;
+    color: white;
+    font-size: 20px;
+	line-height: 20px;
+}
