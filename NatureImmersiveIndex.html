@@ -2,6 +2,19 @@
 <head>
    <meta data = "utf-8">
    <link rel="stylesheet" href="Styles.css">
+   <style>
+	  .video-wrapper {
+	    width: 640px;
+	    overflow: hidden; 
+	    border-radius: 8px; 
+	    margin: 0 auto; 
+	  }
+	
+	  .video-wrapper video {
+	    width: 100%;
+	    display: block;
+	  }
+	   </style>
 </head>
 <body>
    <nav class="topnav">
@@ -29,6 +42,7 @@
 			diverse ecosystems, our website offers a seamless experience to connect you with nature's 
 			wonders. Explore, relax, and be inspired by the stunning visuals and soothing music. </p>
 		 <br>
+	      	    <div class="video-wrapper">
 			<video width="640" height="360" autoplay>
 			  <source src="home-page.mp4" type="video/mp4">
 			  Your browser does not support the video tag or the file format of this video.
