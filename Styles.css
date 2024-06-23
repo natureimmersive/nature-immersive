@@ -1,26 +1,21 @@
 /* Importing social media icons for footer */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-/*** Constant code for all pages ***/
 
+/************ Constant code for all pages ************/
 /* Overall Body */
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
 	background-image: url("hamilton-lake.jpg");
-	/* Add your image URL here */
-	background-size: cover;
-	/* Ensures the image covers the entire background */
+	background-size: cover; /* Makes image covers the entire background */
 	background-repeat: no-repeat;
-	/* Prevents the image from repeating */
 	background-position: center center;
-	/* Centers the image */
-	background-attachment: fixed;
-	/* Keeps the background fixed on scroll */
+	background-attachment: fixed; /* Keeps the background fixed when scrolling */
 }
 
-/* Navigation bar code */
+/* Styles the Navigation Buttons */
 .topnav a {
 	color: white;
 	padding: 10px 10px;
@@ -30,18 +25,16 @@ body {
 	margin-right: 70px;
 	margin-bottom: 0px;
 	transition: background-color 0.4s, color 0.3s;
-	/* Smooth transition for hover effect */
 }
 
 /* Hover effect/animation for the navigation bar */
 .topnav a:hover {
-	background-color: lightgreen;
-	/* Highlight color */
+	background-color: lightgreen; /* Highlights the button lightgreen */
 	color: black;
 }
 
 .topnav a.active {
-	background-color: lightgreen;
+	background-color: lightgreen; /* Stays lightgreen for the button  */
 	color: black;
 }
 
@@ -50,23 +43,19 @@ body {
 	align-items: center;
 }
 
-/* Background for the navigation bar */
+/* Background styling for the navigation bar */
 .topnav ul {
 	list-style-type: none;
 	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.8);
-	/* Semi-transparent background */
+	background-color: rgba(0, 0, 0, 0.8); /* Makes the background color semi transparent */
 	padding: 0px;
 	margin: 0px;
 	display: flex;
-	/* Use flexbox for layout */
 	justify-content: flex-end;
-	/* Align children to the right */
 	align-items: center;
-	/* Center children vertically */
 }
 
-/* Navigation bar logo */
+/* Sets the size and location of logo on the navigation bar  */
 .logo img {
 	height: 70px;
 	width: 140px;
@@ -74,6 +63,7 @@ body {
 	margin-right: 440px;
 }
 
+/* Styling for the main content of the page */
 main {
 	border-radius: 0px;
 	width: 55%;
@@ -83,20 +73,19 @@ main {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 	color: #000000;
 	overflow: hidden;
-	/* Hide overflow content */
-	word-wrap: break-word;
-	/* Break long words */
+	word-wrap: break-word; /* Break long sentences */
 	text-align: center;
-	line-height: 25px;
+	line-height: 25px; /* Spacing between each sentences */
 }
 
+/* Makes sure that any image, video or iframes stay within the main container */
 main img,
 main video,
 main iframe {
-	max-width: 100%;
-	/* To make sure media elements do not exceed the container width */
+	max-width: 100%; /* To make sure the elements do not exceed the container width */
 }
 
+/* Styling for the page names */
 #h1name {
 	text-align: center;
 	font-size: 35px;
@@ -105,12 +94,9 @@ main iframe {
 }
 
 
-/*** Home Page ***/
+/************ About Us Page ************/
 
-
-/*** About Us Page ***/
-
-/* For Table for the Meet The Team Section */
+/* Styling for the Table for the Meet The Team Section */
 table {
 	width: 66%;
 	border-collapse: collapse;
@@ -118,9 +104,7 @@ table {
 	font-size: 17px;
 	text-align: center;
 	word-wrap: break-word;
-	/* Ensures content wraps within the cell */
 	table-layout: fixed;
-	/* Ensures even spacing of columns */
 }
 
 th,
@@ -139,9 +123,9 @@ th {
 	font-weight: bold;
 }
 
-/*** Virtual Tours Page ***/
+/************ Virtual Tours Page ************/
 
-/* First Row */
+/* First Row that styles where the video is located to be on the left and the text on the right */
 .bt-wrapper1 {
 	margin: 0px;
 }
@@ -171,6 +155,7 @@ th {
 	border-radius: 0px 8px 8px 0px;
 }
 
+/* Sizing for the video */
 @media screen and (max-width: 800px) {
 	.row {
 		flex-direction: column;
@@ -182,8 +167,7 @@ th {
 	}
 }
 
-/* Second Row */
-
+/* Second Row that styles where the text on the right and the video is located to be on the left */
 .bt-wrapper2 {
 	margin: 0px;
 }
@@ -213,6 +197,7 @@ th {
 	height: 100%;
 }
 
+/* Sizing for the video */
 @media screen and (max-width: 800px) {
 	.row {
 		flex-direction: column;
@@ -224,8 +209,7 @@ th {
 	}
 }
 
-/* Third Row */
-
+/* Third Row that styles where the video is located to be on the left and the text on the right */
 .bt-wrapper3 {
 	margin: 0px;
 }
@@ -255,6 +239,7 @@ th {
 	border-radius: 0px 8px 8px 0px;
 }
 
+/* Sizing for the video */
 @media screen and (max-width: 800px) {
 	.row {
 		flex-direction: column;
@@ -265,14 +250,14 @@ th {
 		height: 100%;
 	}
 }
-
+/* Sizing for the heading text on the rows */
 #h2name {
 	font-size: 22px;
 }
 
-/*** Contacts Page ***/
+/************ Contacts Page ************/
 
-/* General styles for the form */
+/* Styles for the form */
 form {
 	max-width: 400px;
 	margin: auto;
@@ -289,7 +274,7 @@ form label {
 	font-weight: bold;
 }
 
-/* General styles for all input boxes */
+/* Styles for all input boxes */
 form input[type="text"] {
 	width: 100%;
 	padding: 10px;
@@ -301,7 +286,7 @@ form input[type="text"] {
 	font-size: 16px;
 }
 
-/* Styling the submit button */
+/* Styling for the submit button */
 form input[type="submit"] {
 	width: 50%;
 	background-color: #4CAF50;
@@ -313,12 +298,15 @@ form input[type="submit"] {
 	font-size: 16px;
 }
 
+/* Hover color on the submit button */
 form input[type="submit"]:hover {
 	background-color: #45a049;
 }
 
 
-/* Footer */
+/************ Footer ************/
+
+/* Footer main styling */
 footer {
 	text-align: center;
 	padding: 1px;
@@ -334,7 +322,6 @@ footer {
 	font-size: 24px;
 	width: 40px;
 	text-align: center;
-	text-decoration: none;
 }
 
 /* Hover effect for social media icons */
@@ -345,6 +332,7 @@ footer {
 /* Facebook Icon Styling*/
 .fa-facebook {
 	color: white;
+	/* Transitions for opacity */
 	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
@@ -355,6 +343,7 @@ footer {
 /* Instagram Icon Styling */
 .fa-instagram {
 	color: white;
+	/* Transitions for opacity */
 	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
@@ -364,6 +353,7 @@ footer {
 
 .fa-youtube {
 	color: white;
+	/* Transitions for opacity */
 	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
